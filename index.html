@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/5ab8af27b0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo"><h1><span class="first">A</span><span class="second">lex.</span> </span></h1></div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span class="first">Alex</span><br>  Rusu From <span class="blue">Ro</span><span class="yellow">man</span><span class="red">ia</span></h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/user.png" alt="user"/>
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>As a web developer enthusiast, I am
+                passionate about creating innovative
+                and dynamic websites that engage
+                users and solve complex business
+                problems. I love learning new
+                programming languages, frameworks,
+                and tools to create a unique online
+                experience for users.
+                I am experienced in using various
+                programming languages and
+                frameworks such as HTML, CSS,
+                JavaScript, React, Python, Django and
+                Flask and I am always looking to
+                expand my skills, learn more and become better everyday.</p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Front-End Development</span><br>HTML, CSS/SCSS, JavaScript, ReactJS
+                  </li>
+                  <li>
+                    <span>Back-End Development</span><br>Python(Django, Flask), C/C++, SQL
+                  </li>
+                  <li>
+                    <span>Version Control Systems</span><br>Experience with Git
+                  </li>
+                  <li>
+                    <span>Linux</span><br>Experience with Bash Line Command
+                  </li>
+                  <li>
+                    <span>Knowledge and good practices of</span><br>User Interfaces, CI/CD, Testing, Scalability and Security, SEO Optimization
+                  </li>
+                  <li>
+                    <span>Proficient in English</span><br>Speaking, Writing, Reading, Listening
+                  </li>
+                  <li>
+                    <span>Strong problem-solving and analytical skills</span><br>Excellent attention to detail and ability to work in a team
+                  </li>
+
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Colegiul Național "Eudoxiu Hurmuzachi", Rădăuți</span><br>Specialization - Mathematics and Informatics<br> 2015 - 2019
+                  </li>
+                  <li>
+                    <span>"Babeș-Bolyai" University, Cluj-Napoca</span><br>Faculty of Mathematics and Computer Science<br> 2019-2022
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="certifications">
+                <ul>
+                  <li>
+                    <span>Cambridge English Certificate</span><br>June 2018
+                  </li>
+                  <li>
+                    <span>Harvard University's CS50 Course</span><br>2022
+                  </li>
+                  <li>
+                    <span>Harvard University's CS50W Web Programming Course</span><br>2023
+                  </li>
+                  <li>
+                    <span>Programming Course FreeCodeCamp's React Course</span><br>2023
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <h4 class="sub-subtitle">The following projects contain YouTube links for each application. The description of each video contains specifications and more details.</h4>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png" alt="Project 1">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Follow Me is a Social Network Website for making posts and following users. Some of the functionalities include: Adding a new post, Viewing All Posts, Viewing Profile Pages, Following/Unfollowing users and access to a "Following" feed, Infinite Scroll, Editing Posts, Posting Comments and Liking/Unliking posts.</p>
+                <a href="https://youtu.be/CK8gRhOj5AE" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png" alt="Project 2">
+              <div class="layer">
+                <h3>Auctions App</h3>
+                <p>An eBay-like e-commerce auction website that allows users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.”</p>
+                <a href="https://youtu.be/CCiAGweYE_8" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-6.png" alt="Project 6">
+              <div class="layer">
+                <h3>Mail App</h3>
+                <p>A Mail Web Application including usual functionalities like Sending Mails, Viewing Mailbox, Viewing Emails, Archieving and Unarchieving Emails, Replying to Emails</p>
+                <a href="https://youtu.be/xlYSQqZIqf4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png" alt="Project 3">
+              <div class="layer">
+                <h3>Online School Catalogue App</h3>
+                <p>It is an online catalogue useful for students and teachers, to keep track of their grades and overall educational situationship. It can be used by schools, highschools or universities.</p>
+                <a href="https://youtu.be/2b6VjMx0OKg" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-4.png" alt="Project 4">
+              <div class="layer">
+                <h3>Google Clone App</h3>
+                <p>Google Clone with functionalities: Google Search, Google Images Search, Google Advanced Search.</p>
+                <a href="https://youtu.be/d_kXi7P1gOk" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-5.png" alt="Project 5">
+              <div class="layer">
+                <h3>Wikipedia Clone App</h3>
+                <p>An Wikipedia-like online encyclopedia that allows users to search, view, add and edit different pages. It also has functionalities like being redirected to a Random Page and converting Markdown text to HTML.</p>
+                <a href="https://youtu.be/FOSskbY5Fyw" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            
+          </div>
+          <a href="cv.pdf" class="btn" target="_blank">See my CV</a>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>rusu2k@yahoo.com</p>
+              <p><i class="fa-solid fa-square-phone"></i>+40759180476</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/Rusu2k/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rusu_alex2k/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/alex-rusu-275383255/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright @ Rusu Alexandru 2023</p>
+        </div>
+      </div>
+
+
+      </main>
+      <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tab){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tab).classList.add("active-tab");
+        }
+
+      </script>
+
+      <script>
+        
+        let sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+        
+        function closemenu() {
+          sidemenu.style.right = "-125px";
+        }
+
+      </script>
+      <script>
+        const scriptURL = 
+        'https://script.google.com/macros/s/AKfycbyzqW40hdi8R1HVPKpCUdLUYQ8M0x2EzaT7lW2tb7oRgxH6n2MoWO0eY7M4xocRCILyOA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message sent successfully";
+              setTimeout(function(){
+                msg.innerHTML = "";
+              }, 5000)
+              form.reset
+            
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      </body>
+      </html>
+      
+          
+          
