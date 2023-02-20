@@ -338,7 +338,7 @@ form .btn2{
   margin-top: 20px;
 }
 
-.small {
+.small-scr {
   display: none;
 }
 
@@ -354,7 +354,7 @@ nav .fa-solid {
     background-image: url('images/bkg-phone.png');
   }
   
-  .small {
+  .small-scr {
     display: block;
   }
 
