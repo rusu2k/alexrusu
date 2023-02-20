@@ -338,6 +338,10 @@ form .btn2{
   margin-top: 20px;
 }
 
+.small {
+  display: none;
+}
+
 
 /* --------------css for small screens --------------------------- */
 
@@ -348,6 +352,10 @@ nav .fa-solid {
 @media only screen and (max-width: 600px){
   #header {
     background-image: url('images/bkg-phone.png');
+  }
+  
+  .small {
+    display: block;
   }
 
   .header-text {
