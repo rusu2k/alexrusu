@@ -354,6 +354,10 @@ nav .fa-solid {
     background-image: url('images/bkg-phone.png');
   }
   
+  .container {
+    padding: 10px 5%;
+  }
+  
   .small-scr {
     display: block;
   }
