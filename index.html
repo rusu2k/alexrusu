@@ -119,57 +119,205 @@
           <h1 class="sub-title">My Work</h1>
           <h4 class="sub-subtitle">The following projects contain YouTube links for each application. The description of each video contains specifications and more details.</h4>
           <div class="work-list">
-            <div class="work">
+            <div class="work" onclick="open_project('project1')">
               <img src="images/work-1.png" alt="Project 1">
               <div class="layer">
                 <h3>Social Media App</h3>
                 <p>Follow Me is a Social Network Website for making posts and following users. Some of the functionalities include: Adding a new post, Viewing All Posts, Viewing Profile Pages, Following/Unfollowing users and access to a "Following" feed, Infinite Scroll, Editing Posts, Posting Comments and Liking/Unliking posts.</p>
-                <a href="https://youtu.be/CK8gRhOj5AE" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#project1" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
-            <div class="work">
+            <div class="work" onclick="open_project('project2')">
               <img src="images/work-2.png" alt="Project 2">
               <div class="layer">
                 <h3>Auctions App</h3>
                 <p>An eBay-like e-commerce auction website that allows users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.”</p>
-                <a href="https://youtu.be/CCiAGweYE_8" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#project2" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
-            <div class="work">
+            <div class="work" onclick="open_project('project3')">
               <img src="images/work-6.png" alt="Project 6">
-              <div class="layer">
+              <div class="layer" >
                 <h3>Mail App</h3>
                 <p>A Mail Web Application including usual functionalities like Sending Mails, Viewing Mailbox, Viewing Emails, Archieving and Unarchieving Emails, Replying to Emails</p>
-                <a href="https://youtu.be/xlYSQqZIqf4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#project3" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
-            <div class="work">
+            <div class="work" onclick="open_project('project4')">
               <img src="images/work-3.png" alt="Project 3">
               <div class="layer">
                 <h3>Online School Catalogue App</h3>
                 <p>It is an online catalogue useful for students and teachers, to keep track of their grades and overall educational situationship. It can be used by schools, highschools or universities.</p>
-                <a href="https://youtu.be/2b6VjMx0OKg" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#project4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
-            <div class="work">
+            <div class="work" onclick="open_project('project5')">
               <img src="images/work-4.png" alt="Project 4">
               <div class="layer">
                 <h3>Google Clone App</h3>
                 <p>Google Clone with functionalities: Google Search, Google Images Search, Google Advanced Search.</p>
-                <a href="https://youtu.be/d_kXi7P1gOk" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#project5"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
-            <div class="work">
+            <div class="work" onclick="open_project('project6')">
+              
               <img src="images/work-5.png" alt="Project 5">
               <div class="layer">
                 <h3>Wikipedia Clone App</h3>
                 <p>An Wikipedia-like online encyclopedia that allows users to search, view, add and edit different pages. It also has functionalities like being redirected to a Random Page and converting Markdown text to HTML.</p>
-                <a href="https://youtu.be/FOSskbY5Fyw" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#project6"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
             </div>
-            
           </div>
           
+          <!-- https://youtu.be/CK8gRhOj5AE -->
+          <!-- https://youtu.be/CCiAGweYE_8 -->
+          <!-- https://youtu.be/xlYSQqZIqf4 -->
+          <!-- https://youtu.be/2b6VjMx0OKg -->
+          <!-- https://youtu.be/d_kXi7P1gOk -->
+          <!-- https://youtu.be/FOSskbY5Fyw -->
+        </div>
+        <div class="projects-titles">
+          <div class="tab-titles tab-titles-project">
+            <p class="project-links active-link project1" onclick="open_project('project1')">Social Network Project</p>
+            
+            <p class="project-links project3" onclick="open_project('project3')">Mail Project</p>
+            <p class="project-links project2" onclick="open_project('project2')">Auctions Project</p>
+            <p class="project-links project4" onclick="open_project('project4')">Catalogue Project</p>
+            <p class="project-links project5" onclick="open_project('project5')">Google Project</p>
+            <p class="project-links project6" onclick="open_project('project6')">Wikipedia Project</p>
+          </div>
+        </div>
+        
+        <div id="project1" class="container project active-tab">
+          <h2 class="project-title">Social Media App - Follow Me</h2>
+          
+          <iframe class="youtube" width="80%" height="555" src="https://www.youtube.com/embed/CK8gRhOj5AE"></iframe>
+
+          <div class="project-description">
+            <h3 class="">Description:</h3>
+            <br>
+            <p>Follow me is my most recent project and also a full-fledged Social Network web application.
+              The project is a web-based application made with JavaScript, ReactJS and Python(Django). <br><br>
+              
+              The main functionalities are: <br>
+              - Fully functional register and login <br>
+              - View all posts sorted by newest <br>
+              - View profile pages <br>
+              - Follow/unfollow users <br>
+              - View all posts of following users <br>
+              - Infinite scroll on the feed <br>
+              - Like/unlike <br>
+              - Comments <br>
+            </p>
+          </div>
+        </div>
+
+        <div id="project2" class="container project">
+          <h2 class="project-title">Auctions App - Commerce</h2>
+          
+          <iframe class="youtube" width="80%" height="555" src="https://www.youtube.com/embed/CCiAGweYE_8"></iframe>
+
+          <div class="project-description">
+            <h3 class="">Description:</h3>
+            <br>
+            <p>Commerce is a full-fledged e-comerce eBay-like web application for auctions.
+              The project is a web-based application made using HTML, CSS, JavaScript for the frontend and Python(Django) and SQLite3 for the server-side.
+              <br><br>
+              The main functionalities are: <br>
+              - Fully functional register and login <br>
+              - View all active/closed listings <br>
+              - View listing pages <br>
+              - Create a new listing/ close your own listings <br>
+              - Bid on listings <br>
+              - Filter listings by categories <br>
+              - Add/remove a listing to Watchlist <br>
+            </p>
+          </div>
+        </div>
+
+        <div id="project3" class="container project">
+          <h2 class="project-title">Mail App</h2>
+          
+          <iframe class="youtube" width="80%" height="555" src="https://www.youtube.com/embed/xlYSQqZIqf4"></iframe>
+
+          <div class="project-description">
+            <h3 class="">Description:</h3>
+            <br>
+            <p>This project is a web-based application made using HTML, CSS, JavaScript and Python(Django) for the server-side. Its purpose is to serve as an Gmail-like Mail App. <br><br>
+              
+              The main functionalities are: <br>
+              - Login/Register <br>
+              - View Mailbox <br>
+              - Inbox/Sent/Archived emails <br>
+              - Archieve/Unarchive emails <br>
+              - Reply to emails
+            </p>
+          </div>
+        </div>
+
+        <div id="project4" class="container project">
+          <h2 class="project-title">School Catalogue App - Catalogue</h2>
+          
+          <iframe class="youtube" width="80%" height="555" src="https://www.youtube.com/embed/2b6VjMx0OKg"></iframe>
+
+          <div class="project-description">
+            <h3 class="">Description:</h3>
+            <br>
+            <p>Catalogue is an online school catalogue useful for students and teachers, to keep track of their grades and overall educational situationship. It can be used by schools, highschools or universities. <br><br>
+
+              The project is a web-based application made using HTML, CSS, JavaScript for the front-end and Python(Flask) and SQLite3 for the back-end. <br><br>
+              
+              - Fully functional register and login -the ability to see all the grades of the student who is logged in (course, grade, date and time of the assignation <br>
+              - Filter and sort for the grades based on course, grade <br>
+              - The ability to add new grades <br>
+              - The possibility to view advanced statistics such as: <br>
+              - Top x students (x being a value given by the user)<br>
+              - My rank in the system(based on the general average grade of all students registered)<br>
+              - My general average for each course and the total general average
+            </p>
+          </div>
+        </div>
+
+        <div id="project5" class="container project">
+          <h2 class="project-title">Google Clone</h2>
+          
+          <iframe class="youtube" width="80%" height="555" src="https://www.youtube.com/embed/d_kXi7P1gOk"></iframe>
+
+          <div class="project-description">
+            <h3 class="">Description:</h3>
+            <br>
+            <p>This project is a web-based application made using HTML, CSS, JavaScript meant to recreate the Google functionalities and aesthetics. <br><br>
+              
+              The main functionalities are: <br>
+              - Google Search <br>
+              - Google Image Search <br>
+              - Google Advanced Search <br>
+              - I'm Feeling Lucky
+            </p>
+          </div>
+        </div>
+
+        <div id="project6" class="container project">
+          <h2 class="project-title">Wikipedia Clone</h2>
+          
+          <iframe class="youtube" width="80%" height="555" src="https://www.youtube.com/embed/FOSskbY5Fyw"></iframe>
+
+          <div class="project-description">
+            <h3 class="">Description:</h3>
+            <br>
+            <p>This project is a web-based application made using HTML, CSS, JavaScript and Python(Django) for the server-side. Its purpose is to serve as an Wikipedia-like Encyclopedia App. <br><br>
+              
+              The main functionalities are: <br>
+              - Create a new Entry Page <br>
+              - Edit a page <br>
+              - View pages <br>
+              - Search for pages <br>
+              - Random Page <br>
+              - Reply to emails <br>
+              - Markdown to HTML Conversion
+            </p>
+          </div>
         </div>
       </div>
 
@@ -210,6 +358,9 @@
         let tablinks = document.getElementsByClassName("tab-links");
         let tabcontents = document.getElementsByClassName("tab-contents");
 
+        let projectlinks = document.getElementsByClassName("project-links");
+        let projectcontents = document.getElementsByClassName("project");
+
         function opentab(tab){
           for(tablink of tablinks){
             tablink.classList.remove("active-link");
@@ -219,8 +370,27 @@
             tabcontent.classList.remove("active-tab");
           }
 
+          
           event.currentTarget.classList.add("active-link");
           document.getElementById(tab).classList.add("active-tab");
+        }
+
+        function open_project(project) {
+          for(projectlink of projectlinks){
+            projectlink.classList.remove("active-link");
+          }
+
+          for (projectcontent of projectcontents){
+            projectcontent.classList.remove("active-tab");
+          }
+          
+          console.log(project);
+          console.log(document.getElementsByClassName(project));
+          document.getElementsByClassName(project)[0].classList.add("active-link");
+          
+          
+          document.getElementById(project).classList.add("active-tab");
+          
         }
 
       </script>

@@ -135,16 +135,20 @@ nav ul li a:hover::after {
   margin: 20px 0 40px;
 }
 
-.tab-links {
+.tab-links, .project-links {
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  padding: 6px;
+  color: olive;
+  border-radius: 6px;
+  transition: 0.5s;
 }
 
 
-.tab-links::after {
+.tab-links::after, .project-links::after {
   content: '';
   width: 0;
   height: 3px;
@@ -155,8 +159,17 @@ nav ul li a:hover::after {
   transition: 0.5s;
 }
 
-.tab-links.active-link::after {
+.tab-links.active-link::after, .project-links.active-link::after {
   width: 50%;
+}
+
+.active-link {
+  color: white;
+  background-color: rgba(128,128,0,0.5);
+  padding: 6px;
+  border-radius: 6px;
+  transform: scale(1.3);
+  transition: 0.5s;
 }
 
 .tab-contents ul li {
@@ -169,11 +182,11 @@ nav ul li a:hover::after {
   font-size: 14px;
 }
 
-.tab-contents {
+.tab-contents, .project {
   display: none;
 }
 
-.tab-contents.active-tab {
+.tab-contents.active-tab, .project.active-tab {
   display: block;
 }
 
@@ -342,6 +355,45 @@ form .btn2{
   display: none;
 }
 
+.tab-titles-project {
+  flex: 1 1;
+  flex-wrap: wrap;
+  line-height: 14px;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+
+
+.youtube {
+  display: block;
+  width: 80%;
+  height: 600px;
+  margin: 1.8rem auto;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+
+.project-title {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.project-description {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.project {
+  display: none;
+}
+
+.projects-titles {
+  margin: 3rem auto;
+  width: 80%;
+}
 
 /* --------------css for small screens --------------------------- */
 
@@ -352,6 +404,20 @@ nav .fa-solid {
 @media only screen and (max-width: 600px){
   #header {
     background-image: url('images/bkg-phone.png');
+  }
+
+  
+  
+
+  .container.project {
+    width: 100%;
+    
+    padding: 0;
+  }
+  .youtube {
+    width: 100%;
+    margin: 1rem 0;
+    height: 300px;
   }
   
   .container {
@@ -396,6 +462,9 @@ nav .fa-solid {
   nav ul li {
     display: block;
     margin: 25px;
+  }
+  .tab-titles-project {
+    font-size: 14px;
   }
 
   nav ul .fa-solid {
@@ -450,3 +519,4 @@ main > * {
 .sub-subtitle {
   margin-top: 10px;
 }
+
